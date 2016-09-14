@@ -219,7 +219,7 @@ h6 {
           transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 .btn.btn-lg {
-  padding: 10px 35px;
+  margin: 5px 35px 9px 35px;
   letter-spacing: 2px;
   font-size: 21px;
 }
@@ -345,12 +345,6 @@ h6 {
 }
 .section-title.st-center:before {
   margin: auto;
-}
-.section-title:before {
-  content: "";
-  display: block;
-  width: 150px;
-  height: 51px;
 }
 .bottom-line {
   margin-bottom: 20px;
@@ -1099,12 +1093,11 @@ ul.styled-list.list-star li:before {
 .clients-carousel li:hover {
   opacity: 1;
 }
-.testimonials {
+.tweets-container {
   padding: 100px 0;
   background-image: url(../images/testimonials.png);
   background-size: cover;
   background-attachment: fixed;
-  background-color: #000;
   color: #fff;
 }
 .testimonial .testimonial-img {
@@ -1419,13 +1412,14 @@ ul.styled-list.list-star li:before {
   color: #fff;
 }
 .subscribe {
-  padding: 120px 0;
+  padding: 20px 0;
   background-image: url(../images/subscribe2.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #000;
+  margin: 50px 0px 0px 0px; 
 }
 .subscribe .subscribe-title {
   text-align: center;
@@ -1444,13 +1438,13 @@ ul.styled-list.list-star li:before {
   margin: 0;
   text-transform: uppercase;
 }
-.subscribe .subscribe-social {
+.subscribe-social {
   padding: 0;
   margin: 0;
   list-style: none;
   text-align: center;
 }
-.subscribe .subscribe-social li {
+.subscribe-social li {
   padding: 0;
   margin: 0;
   margin-right: 5px;
@@ -1542,9 +1536,12 @@ a.social.linked:hover {
   padding: 120px 0;
 }
 .contact form input,
-.contact form textarea {
+.contact form textarea, 
+#library form input,
+#library form textarea {
   margin-bottom: 30px;
 }
+
 input[type="text"].formFieldError,
 input[type="email"].formFieldError,
 textarea.formFieldError {
@@ -1613,4 +1610,92 @@ footer.site-footer a:hover {
 .col-md-12 > h1 {
   text-align: center;
   padding: 0px 0px 50px 0px;
+}
+
+.subscribe-result {
+    text-align: center;
+}
+.subsuccess {
+    color: aqua !important;
+}
+.subfailure {
+    color: darkred !important;
+}
+
+#loadMore {
+    padding: 10px;
+    text-align: center;
+    background-color: #33739E;
+    color: #fff;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0 1px 1px #ccc;
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+}
+#loadMore:hover {
+    background-color: #fff;
+    color: #33739E;
+}
+
+#library {
+    padding:18px 0 0 0;
+}
+
+
+.imgsize {
+    
+}
+
+.posit3 {
+    margin:0px 0px 50px 0px;
+}
+
+.posit2 {
+    margin:0px 0px 50px 0px;
+    height: 100px;
+    width: 200px;
+}
+
+.img-responsive {
+    cursor: pointer;
+}
+.docform .form-control {
+    width: 45%;
+    float: left;
+    margin-left: 35px;
+}
+.docform .btn .btn-lg {
+    margin-left: 35px;
+}
+.docform address {
+    margin: 0px 0px 0px 20px;
+}
+blockquote.twitter-tweet {
+    display: inline-block;
+    padding: 16px;
+    margin: 10px 0;
+    width: 468px;
+    height: 200px;
+    border: #ddd 1px solid;
+    border-top-color: #eee;
+    border-bottom-color: #bbb;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    font: bold 14px/18px Helvetica, Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+ 
+blockquote.twitter-tweet p {
+  font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+  margin: 0 5px 10px 0;
+}
+blockquote.twitter-tweet a[href^="http://twitter.com"] {
+  font-weight: normal;
+  color: #666;
+  font-size: 12px;
 }

@@ -74,9 +74,9 @@ jQuery(function ($) {
 });
 
 function initialize() {
-    var map;
-    var bounds = new google.maps.LatLngBounds();
-    var mapOptions = {
+    var map,
+    bounds = new google.maps.LatLngBounds(),
+    mapOptions = {
         mapTypeId: 'roadmap',
         scrollwheel: false,
         center: {lat: 8.9848, lng: 4.5624},
@@ -157,19 +157,3 @@ function shuffler() {
         $('input[name="filter"]:checked').parent().addClass('btn-main');
     });
 }
-
-
-/*Modals change*/
-
-var projects = [
-    {
-        projectTitle: "Street Light",
-        projectImageSrc: "project/image1.png",
-        projectDecscription: "street light, street light, street light, street light, street light.",
-        
-    },
-    {},
-    {},
-    {},
-    {}
-] 
